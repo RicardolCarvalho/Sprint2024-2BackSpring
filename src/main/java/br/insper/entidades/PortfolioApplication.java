@@ -1,6 +1,5 @@
 package br.insper.entidades;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,9 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PortfolioApplication {
 
 	public static void main(String[] args) {
-		Dotenv dotenv = Dotenv.load();
-		System.setProperty("MONGO_URI", dotenv.get("MONGO_URI"));
-
+		System.out.println("MONGO_URI: " + System.getenv("MONGO_URI"));  // Log da variável de ambiente
 		SpringApplication.run(PortfolioApplication.class, args);
 	}
+
 }
