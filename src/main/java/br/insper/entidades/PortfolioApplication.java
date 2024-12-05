@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PortfolioApplication {
 
 	public static void main(String[] args) {
-		System.out.println("MONGO_URI: " + System.getenv("MONGO_URI"));  // Log da variável de ambiente
+		System.out.println("Iniciando aplicação...");
+		System.out.println("Porta definida: " + System.getenv("PORT"));
 		SpringApplication.run(PortfolioApplication.class, args);
 	}
 

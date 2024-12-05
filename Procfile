@@ -1,1 +1,1 @@
-web: java -jar target/entidades-0.0.1-SNAPSHOT.jar
+web: java -Xmx256m -Xss512k -jar target/entidades-0.0.1-SNAPSHOT.jar
