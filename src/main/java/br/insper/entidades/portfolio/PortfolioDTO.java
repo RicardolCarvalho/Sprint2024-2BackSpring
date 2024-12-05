@@ -1,0 +1,34 @@
+package br.insper.entidades.portfolio;
+
+record CadastrarPortfolioDTO(
+    String alunoId,
+    String disciplinaId,
+    String ano,
+    String frequencia,
+    String notaBimestre1,
+    String notaBimestre2,
+    String notaBimestre3,
+    String notaBimestre4,
+    String projetoId,
+    String observacaoId,
+    String perguntaRetencao,
+    String laudoMedicoId,
+    String dadoSensivelId
+) {}
+
+record RetornarPortfolioDTO(
+    String id,
+    String alunoId,
+    String disciplinaId,
+    String ano,
+    String frequencia,
+    String notaBimestre1,
+    String notaBimestre2,
+    String notaBimestre3,
+    String notaBimestre4,
+    String projetoId,
+    String observacaoId,
+    String perguntaRetencao,
+    String laudoMedicoId,
+    String dadoSensivelId
+) {}
